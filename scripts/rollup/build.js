@@ -361,7 +361,7 @@ function getPlugins(
     // Compile to ES5.
     babel(getBabelConfig(updateBabelOptions, bundleType)),
     // Convert large compatible objects to a string inside `JSON.parse`
-    // rollupJsonParse(),
+    rollupJsonParse(),
     // Remove 'use strict' from individual source files.
     {
       transform(source) {
