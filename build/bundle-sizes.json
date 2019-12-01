@@ -60,8 +60,8 @@
       "filename": "react-dom.development.js",
       "bundleType": "UMD_DEV",
       "packageName": "react-dom",
-      "size": 977941,
-      "gzip": 220493
+      "size": 976886,
+      "gzip": 220745
     },
     {
       "filename": "react-dom.production.min.js",
@@ -81,8 +81,8 @@
       "filename": "react-dom.development.js",
       "bundleType": "NODE_DEV",
       "packageName": "react-dom",
-      "size": 971866,
-      "gzip": 218877
+      "size": 970811,
+      "gzip": 219127
     },
     {
       "filename": "react-dom.production.min.js",
@@ -102,8 +102,8 @@
       "filename": "ReactDOM-dev.js",
       "bundleType": "FB_WWW_DEV",
       "packageName": "react-dom",
-      "size": 997744,
-      "gzip": 221310
+      "size": 999599,
+      "gzip": 221735
     },
     {
       "filename": "ReactDOM-prod.js",
@@ -200,8 +200,8 @@
       "filename": "react-dom-server.browser.development.js",
       "bundleType": "UMD_DEV",
       "packageName": "react-dom",
-      "size": 144588,
-      "gzip": 37550
+      "size": 143789,
+      "gzip": 37780
     },
     {
       "filename": "react-dom-server.browser.production.min.js",
@@ -214,8 +214,8 @@
       "filename": "react-dom-server.browser.development.js",
       "bundleType": "NODE_DEV",
       "packageName": "react-dom",
-      "size": 140423,
-      "gzip": 36530
+      "size": 139624,
+      "gzip": 36757
     },
     {
       "filename": "react-dom-server.browser.production.min.js",
@@ -228,8 +228,8 @@
       "filename": "ReactDOMServer-dev.js",
       "bundleType": "FB_WWW_DEV",
       "packageName": "react-dom",
-      "size": 141936,
-      "gzip": 35935
+      "size": 143056,
+      "gzip": 36296
     },
     {
       "filename": "ReactDOMServer-prod.js",
@@ -242,8 +242,8 @@
       "filename": "react-dom-server.node.development.js",
       "bundleType": "NODE_DEV",
       "packageName": "react-dom",
-      "size": 141559,
-      "gzip": 36760
+      "size": 140760,
+      "gzip": 36985
     },
     {
       "filename": "react-dom-server.node.production.min.js",
