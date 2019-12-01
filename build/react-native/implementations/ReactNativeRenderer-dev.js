@@ -4600,7 +4600,7 @@ function beforeRemoveInstance(instance) {
 }
 
 var BEFORE_SLASH_RE = /^(.*)[\\\/]/;
-var describeComponentFrame = function(name, source, ownerName) {
+function describeComponentFrame(name, source, ownerName) {
   var sourceInfo = "";
 
   if (source) {
@@ -4630,7 +4630,7 @@ var describeComponentFrame = function(name, source, ownerName) {
   }
 
   return "\n    in " + (name || "Unknown") + sourceInfo;
-};
+}
 
 var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
 
@@ -23775,7 +23775,7 @@ function createPortal(
 
 var ReactVersion = "16.12.0";
 
-var NativeMethodsMixin = function(findNodeHandle, findHostInstance) {
+function NativeMethodsMixin(findNodeHandle, findHostInstance) {
   /**
    * `NativeMethodsMixin` provides methods to access the underlying native
    * component directly. This can be useful in cases when you want to focus
@@ -24068,7 +24068,7 @@ var NativeMethodsMixin = function(findNodeHandle, findHostInstance) {
   }
 
   return NativeMethodsMixin;
-};
+}
 
 function _inheritsLoose(subClass, superClass) {
   subClass.prototype = Object.create(superClass.prototype);
@@ -24076,7 +24076,7 @@ function _inheritsLoose(subClass, superClass) {
   subClass.__proto__ = superClass;
 }
 
-var ReactNativeComponent = function(findNodeHandle, findHostInstance) {
+function ReactNativeComponent(findNodeHandle, findHostInstance) {
   /**
    * Superclass that provides methods to access the underlying native component.
    * This can be useful when you want to focus a view or measure its dimensions.
@@ -24327,7 +24327,7 @@ var ReactNativeComponent = function(findNodeHandle, findHostInstance) {
     })(React.Component); // eslint-disable-next-line no-unused-expressions
 
   return ReactNativeComponent;
-};
+}
 
 var emptyObject$3 = {};
 

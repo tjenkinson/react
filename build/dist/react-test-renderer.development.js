@@ -1131,7 +1131,7 @@ checkPropTypes.resetWarningCache = function() {
 var checkPropTypes_1 = checkPropTypes;
 
 var BEFORE_SLASH_RE = /^(.*)[\\\/]/;
-var describeComponentFrame = function (name, source, ownerName) {
+function describeComponentFrame (name, source, ownerName) {
   var sourceInfo = '';
 
   if (source) {
@@ -1161,7 +1161,7 @@ var describeComponentFrame = function (name, source, ownerName) {
   }
 
   return '\n    in ' + (name || 'Unknown') + sourceInfo;
-};
+}
 
 var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
 

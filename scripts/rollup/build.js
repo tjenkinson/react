@@ -358,8 +358,6 @@ function getPlugins(
     stripBanner({
       exclude: 'node_modules/**/*',
     }),
-    // Convert large compatible objects to a string inside `JSON.parse`
-    rollupJsonParse(),
     // Compile to ES5.
     babel(getBabelConfig(updateBabelOptions, bundleType)),
     // Remove 'use strict' from individual source files.
@@ -378,6 +376,8 @@ function getPlugins(
     }),
     // We still need CommonJS for external deps like object-assign.
     commonjs(),
+    // Convert large compatible objects to a string inside `JSON.parse`
+    rollupJsonParse(),
     // Apply dead code elimination and/or minification.
     isProduction &&
       closure(
