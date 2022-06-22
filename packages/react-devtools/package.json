@@ -24,10 +24,10 @@
   },
   "dependencies": {
     "cross-spawn": "^5.0.1",
-    "electron": "^5.0.0",
+    "electron": "^16.2.5",
     "ip": "^1.1.4",
     "minimist": "^1.2.0",
     "react-devtools-core": "4.2.1",
-    "update-notifier": "^2.1.0"
+    "update-notifier": "^4.0.0"
   }
 }
