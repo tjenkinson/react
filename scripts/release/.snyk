@@ -1,0 +1,23 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - request-promise-json > request > extend:
+        patched: '2022-09-29T23:49:33.345Z'
+  'npm:hoek:20180212':
+    - request-promise-json > request > hawk > hoek:
+        patched: '2022-09-29T23:49:33.345Z'
+    - request-promise-json > request > hawk > boom > hoek:
+        patched: '2022-09-29T23:49:33.345Z'
+    - request-promise-json > request > hawk > sntp > hoek:
+        patched: '2022-09-29T23:49:33.345Z'
+    - request-promise-json > request > hawk > cryptiles > boom > hoek:
+        patched: '2022-09-29T23:49:33.345Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - puppeteer > https-proxy-agent:
+        patched: '2022-09-29T23:49:33.345Z'
+  'npm:stringstream:20180511':
+    - request-promise-json > request > stringstream:
+        patched: '2022-09-29T23:49:33.345Z'
