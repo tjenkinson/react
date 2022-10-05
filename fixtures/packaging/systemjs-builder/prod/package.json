@@ -2,9 +2,13 @@
   "private": true,
   "name": "systemjs-prod-fixture",
   "dependencies": {
-    "systemjs-builder": "^0.15.34"
+    "systemjs-builder": "^0.16.14",
+    "@snyk/protect": "latest"
   },
   "scripts": {
-    "build": "rm -f output.js && node build.js"
-  }
+    "build": "rm -f output.js && node build.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
