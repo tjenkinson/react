@@ -3,16 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
-    "react-scripts": "1.0.17"
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-scripts": "5.0.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
-    "prestart":
-      "cp ../../build/node_modules/react/umd/react.development.js public/ && cp ../../build/node_modules/react-dom/umd/react-dom.development.js public/",
+    "prestart": "cp ../../build/node_modules/react/umd/react.development.js public/ && cp ../../build/node_modules/react-dom/umd/react-dom.development.js public/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
