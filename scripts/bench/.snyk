@@ -1,0 +1,47 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - http-server > portfinder > debug:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-pre-gyp > tar-pack > debug:
+        patched: '2022-10-05T21:24:00.957Z'
+  'npm:extend:20180424':
+    - nodegit > node-gyp > request > extend:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-pre-gyp > request > extend:
+        patched: '2022-10-05T21:24:00.957Z'
+  'npm:hoek:20180212':
+    - nodegit > node-gyp > request > hawk > hoek:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-pre-gyp > request > hawk > hoek:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-gyp > request > hawk > boom > hoek:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-gyp > request > hawk > sntp > hoek:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2022-10-05T21:24:00.957Z'
+  SNYK-JS-LODASH-567746:
+    - nodegit > lodash:
+        patched: '2022-10-05T21:24:00.957Z'
+    - lighthouse > inquirer > lodash:
+        patched: '2022-10-05T21:24:00.957Z'
+  'npm:stringstream:20180511':
+    - nodegit > node-gyp > request > stringstream:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-pre-gyp > request > stringstream:
+        patched: '2022-10-05T21:24:00.957Z'
+  'npm:tough-cookie:20170905':
+    - nodegit > node-gyp > request > tough-cookie:
+        patched: '2022-10-05T21:24:00.957Z'
+    - nodegit > node-pre-gyp > request > tough-cookie:
+        patched: '2022-10-05T21:24:00.957Z'
