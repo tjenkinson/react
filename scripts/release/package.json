@@ -2,7 +2,10 @@
   "name": "react-release-script",
   "version": "0.0.0",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.1.0",
@@ -17,9 +20,11 @@
     "log-update": "^2.1.0",
     "progress-estimator": "^0.2.1",
     "prompt-promise": "^1.0.3",
-    "puppeteer": "^1.11.0",
-    "pushstate-server": "^3.0.1",
+    "puppeteer": "^1.13.0",
+    "pushstate-server": "^3.1.0",
     "request-promise-json": "^1.0.4",
-    "semver": "^5.4.1"
-  }
+    "semver": "^5.4.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
