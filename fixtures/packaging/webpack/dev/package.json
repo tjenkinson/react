@@ -2,9 +2,13 @@
   "private": true,
   "name": "webpack-dev-fixture",
   "dependencies": {
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
-    "build": "rm -f output.js && webpack --config config.js"
-  }
+    "build": "rm -f output.js && webpack --config config.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
