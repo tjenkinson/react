@@ -7,15 +7,18 @@
     "glamor": "^2.20.40",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.11",
-    "react-virtualized": "^9.9.0"
+    "react-scripts": "1.1.1",
+    "react-virtualized": "^9.9.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
-    "prestart":
-      "cp ../../build/node_modules/react/umd/react.development.js public/ && cp ../../build/node_modules/react-dom/umd/react-dom.development.js public/ && cp ../../build/node_modules/react-dom/umd/react-dom-server.browser.development.js public/",
+    "prestart": "cp ../../build/node_modules/react/umd/react.development.js public/ && cp ../../build/node_modules/react-dom/umd/react-dom.development.js public/ && cp ../../build/node_modules/react-dom/umd/react-dom-server.browser.development.js public/",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
